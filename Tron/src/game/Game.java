@@ -23,11 +23,13 @@ public class Game extends JPanel {
     Point topLeftLocation = new Point(10, 10);
     int rows = 5; int cols = 10; int dimension = 10;
     
-    
+    // Testing
     private void moveBall() {
         x = x + 1;
         y = y + 1;
     }
+    
+    
     @Override
     public void paint(Graphics g) {
         super.paint(g);
