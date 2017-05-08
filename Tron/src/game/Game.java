@@ -31,12 +31,12 @@ public class Game extends JPanel {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        
-        //<editor-fold defaultstate="collapsed" desc="Anti-Alias">
         Graphics2D g2d = (Graphics2D) g;
+        
+        // Start Antialias
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
-        //</editor-fold>
+        // End Antialias
         
         for (int row = 0; row < rows; row++){
             for (int col = 0; col < cols; col++){
